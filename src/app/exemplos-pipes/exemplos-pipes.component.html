@@ -8,3 +8,9 @@
 <p>URL: {{ livro.url }} </p>
 <br>
 <p>Livro: {{ livro | json }} </p>
+
+<ul>
+  <li *ngFor="let liv of livros">
+    {{ liv }}
+  </li>
+</ul>
