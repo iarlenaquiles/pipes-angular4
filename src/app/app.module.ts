@@ -18,12 +18,12 @@ import { CamelCasePipe } from './camel-case.pipe';
     BrowserModule
   ],
   providers: [
-    SettingsService,
-    {
-      provide: LOCALE_ID,
-      deps: [SettingsService],
-      useFactory: (settingsService) => settingsService.getLocale()
-    }
+    // SettingsService,
+    // {
+    //   provide: LOCALE_ID,
+    //   deps: [SettingsService],
+    //   useFactory: (settingsService) => settingsService.getLocale()
+    // }
   ],
   bootstrap: [AppComponent]
 })
